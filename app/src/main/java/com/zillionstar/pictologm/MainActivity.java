@@ -28,20 +28,20 @@ public class MainActivity extends AppCompatActivity {
     public void mOnClick(View v) {
         switch(v.getId()) {
             case R.id.btn_home :
+                mWeb.loadUrl("http://203.233.199.165:8888/Pictolog/pictolog");
                 break;
-
             case R.id.btn_search :
-                break;
 
+                break;
             case R.id.btn_add :
-                break;
 
+                break;
             case R.id.btn_private :
-                break;
 
+                break;
             case R.id.btn_setting :
+                mWeb.loadUrl("http://203.233.199.165:8888/Pictolog/memberSetting");
                 break;
-
             default :
                 break;
         }
