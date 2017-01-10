@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         set.setJavaScriptEnabled(true);
         //set.setBuiltInZoomControls(true);
-        mWeb.loadUrl("http://203.233.199.136:8888/Pictolog/pictolog");
+        mWeb.loadUrl("http://10.0.2.2:8888/Pictolog/pictolog");
     }
 
     public void mOnClick(View v) {
