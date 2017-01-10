@@ -10,7 +10,7 @@
         android:layout_gravity="center"
         android:id="@+id/web"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="535dp"
         android:focusable="true"
         android:focusableInTouchMode="true" />
 
