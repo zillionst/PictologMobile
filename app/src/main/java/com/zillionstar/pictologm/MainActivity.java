@@ -1,7 +1,7 @@
 package com.zillionstar.pictologm;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
@@ -10,7 +10,6 @@ import android.webkit.WebViewClient;
 
 public class MainActivity extends AppCompatActivity {
     private WebView mWeb;
-    private String name = "Hello Ji sung Kwon!";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +19,12 @@ public class MainActivity extends AppCompatActivity {
         mWeb = (WebView) findViewById(R.id.web);
         mWeb.setWebViewClient(new MyWebClient());
         WebSettings set = mWeb.getSettings();
+
+        set.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
+
         set.setJavaScriptEnabled(true);
         //set.setBuiltInZoomControls(true);
-        mWeb.loadUrl("http://10.0.2.2:8888/Pictolog/");
+        mWeb.loadUrl("http://203.233.199.136:8888/Pictolog/pictolog");
     }
 
     public void mOnClick(View v) {
