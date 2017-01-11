@@ -10,7 +10,6 @@ import android.webkit.WebViewClient;
 
 public class MainActivity extends AppCompatActivity {
     private WebView mWeb;
-    private String name = "Hello Ji sung Kwon!";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +20,13 @@ public class MainActivity extends AppCompatActivity {
         mWeb.setWebViewClient(new MyWebClient());
         WebSettings set = mWeb.getSettings();
         set.setJavaScriptEnabled(true);
-        set.setBuiltInZoomControls(true);
-        mWeb.loadUrl("http://203.233.199.165:8888/Pictolog/");
+        mWeb.loadUrl("http://10.0.2.2:8888/Pictolog/");
     }
 
     public void mOnClick(View v) {
         switch(v.getId()) {
             case R.id.btn_home :
-                mWeb.loadUrl("http://203.233.199.165:8888/Pictolog/pictolog");
+                mWeb.loadUrl("http://10.0.2.2:8888/Pictolog/pictolog");
                 break;
             case R.id.btn_search :
 
@@ -40,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
             case R.id.btn_setting :
-                mWeb.loadUrl("http://203.233.199.165:8888/Pictolog/memberSetting");
+                mWeb.loadUrl("http://10.0.2.2:8888/Pictolog/memberSetting");
                 break;
             default :
                 break;
