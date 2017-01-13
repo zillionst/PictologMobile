@@ -29,13 +29,13 @@ public class MainActivity extends AppCompatActivity {
                 mWeb.loadUrl("http://10.0.2.2:8888/Pictolog/pictolog");
                 break;
             case R.id.btn_search:
-
+                mWeb.loadUrl("http://10.0.2.2:8888/Pictolog/searchResult");
                 break;
             case R.id.btn_add:
 
                 break;
             case R.id.btn_private:
-                
+
                 break;
             case R.id.btn_setting:
                 mWeb.loadUrl("http://10.0.2.2:8888/Pictolog/memberSetting");

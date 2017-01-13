@@ -10,7 +10,7 @@
     <WebView
         android:id="@+id/web"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="560dp"
         android:focusable="true"
         android:focusableInTouchMode="true" />
 
@@ -23,42 +23,42 @@
         <Button
             android:id="@+id/btn_home"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:onClick="mOnClick"
-            android:text="Home"/>
+            android:text="Home" />
 
         <Button
             android:id="@+id/btn_search"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:onClick="mOnClick"
-            android:text="Search"/>
+            android:text="Search" />
 
         <Button
             android:id="@+id/btn_add"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:onClick="mOnClick"
-            android:text="+"/>
+            android:text="+" />
 
         <Button
             android:id="@+id/btn_private"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:onClick="mOnClick"
-            android:text="Private"/>
+            android:text="Private" />
 
         <Button
             android:id="@+id/btn_setting"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:onClick="mOnClick"
-            android:text="Setting"/>
+            android:text="Setting" />
 
     </LinearLayout>
 
